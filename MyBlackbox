@@ -1,0 +1,12 @@
+class MyBlackbox implements Runnable {
+@Override
+public void run() {
+// ...
+System.out.println("My blackbox thread");
+}
+public static void main(String[] args) {
+Runnable myBlackbox = new MyBlackbox();
+Thread myBlackboxThread = new Thread(myBlackbox);
+myBlackboxThread.start();
+}
+}
