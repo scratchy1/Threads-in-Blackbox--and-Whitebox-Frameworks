@@ -1,0 +1,12 @@
+class MyWhitebox extends Thread {
+@Override
+public void run() {
+// Code, der in einem eigenen Thread ausgefuehrt werden soll.
+// Hier ersatzweise der Aufruf von run() der Superklasse Thread
+super.run();
+}
+public static void main(String[] args) {
+Thread myWhiteboxThread = new MyWhitebox();
+myWhiteboxThread.start();
+}
+}
